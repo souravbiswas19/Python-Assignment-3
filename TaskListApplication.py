@@ -68,18 +68,13 @@ class TaskList: # TaskList class for implementing listing of tasks
 task_list = TaskList()
 task_list.add_task("Do homework")
 task_list.add_task("Go to the gym", "Cardio workout")
+task_list.find_task("Go to the gym").mark_complete()
 task_list.list_tasks()
 task_list.add_priority_task("Buy groceries", "Milk and eggs", "high")
-task_list.find_task("Go to the gym").mark_complete()
 print(task_list.find_task("Do homework").to_s())
 print(task_list.find_priority_task("Buy groceries").to_s())
-task_list.find_priority_task("Buy groceries").mark_complete()
-print(task_list.find_priority_task("Buy groceries").to_s())
-task_list.list_priority_tasks()
 # Output:
 # Task: Do homework - Status: incomplete
 # Task: Go to the gym - Status: incomplete
 # Task: Do homework - Status: incomplete
 # Task: Buy groceries - Status: incomplete - Priority: high
-# Task: Buy groceries - Status: complete - Priority: high
-# Task: Buy groceries - Status: complete - Priority: high
