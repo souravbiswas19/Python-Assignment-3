@@ -1,0 +1,21 @@
+Classes and Objects:
+Classes (Task, PriorityTask, TaskList) are defined, representing different entities in the task management system.
+Objects are created (task_list, new_task, new_priority_task) to represent instances of these classes.
+
+Constructor:
+__init__ methods are implemented in each class to initialize the attributes when an object is created.
+
+Method Overriding:
+mark_complete method in PriorityTask overrides the same method in the parent class Task.
+to_s method in PriorityTask overrides the same method in the parent class Task.
+
+Inheritance:
+PriorityTask class inherits from the Task class, inheriting its attributes and methods.
+
+Encapsulation:
+Attributes of each class are encapsulated within the class, and access is controlled through methods.
+
+Polymorphism:
+to_s method is polymorphic, providing different implementations in Task and PriorityTask.
+
+These concepts together contribute to a well-structured, object-oriented design for the Task List Application
