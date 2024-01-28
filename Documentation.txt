@@ -1,21 +1,24 @@
-Classes and Objects:
-Classes (Task, PriorityTask, TaskList) are defined, representing different entities in the task management system.
-Objects are created (task_list, new_task, new_priority_task) to represent instances of these classes.
+Classes:
+The classes that are defined, representing different entities in the Task List Application system are - Task, PriorityTask, TaskList.
+    -> Constructor:
+        __init__ methods are implemented in each class to initialize the attributes with default values or values passed through paramters when an object is created.
 
-Constructor:
-__init__ methods are implemented in each class to initialize the attributes when an object is created.
-
-Method Overriding:
-mark_complete method in PriorityTask overrides the same method in the parent class Task.
-to_s method in PriorityTask overrides the same method in the parent class Task.
+Objects:
+The objects that are created to represent instances of these classes are - task_list, new_task, new_priority_task
 
 Inheritance:
-PriorityTask class inherits from the Task class, inheriting its attributes and methods.
+The 'PriorityTask' class inherits from the 'Task' class so that we can inherit its attributes and methods.
 
 Encapsulation:
 Attributes of each class are encapsulated within the class, and access is controlled through methods.
 
 Polymorphism:
-to_s method is polymorphic, providing different implementations in Task and PriorityTask.
+'to_s()', 'mark_complete()' methods are polymorphic, providing different implementations in Task and PriorityTask.
+    1.Method Overriding:
+        -> mark_complete() method in PriorityTask overrides the same method in the parent class Task.
+        -> to_s() method in PriorityTask overrides the same method in the parent class Task.
+    2. Method Overloading:
+        Method Overloading is directly not possible in python. It can be implemented using if else conditional statements. 
+        -> add_task() and add_priority_task() method implements method Overloading using if else.
 
-These concepts together contribute to a well-structured, object-oriented design for the Task List Application
+These concepts of Object-oriented programming together contribute to a well-structured design for the Task List Application System.
